@@ -1,0 +1,23 @@
+{
+  "name": "firesale",
+  "productName": "Fire Sale",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error:no test specified\" && exit 1",
+    "build": "yarn run build-win &&  yarn run build-mac &&  yarn run build-linux",
+    "build-win": "electron-packager . --platform=win32 --out=build --icon=./app/icons/icon.ico --asar --overwrite",
+    "build-mac": "electron-packager .  --platform=darwin --out=build --icons=./app/icons/icon.icns --asar --overwrite",
+    "build-linux": "electron-packager .  --platform=linux --out=build --icons=./app/icons/icon.png --asar --overwrite"
+  },
+  "author": "weikai",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^9.0.3",
+    "marked": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.2.1"
+  }
+}

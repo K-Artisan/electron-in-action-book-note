@@ -1,0 +1,28 @@
+{
+  "name": "clipmaster-9000",
+  "productName": "Clip Master 9000",
+  "version": "1.0.0",
+  "description": "clipmaster-9000 无系统托盘版本",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "mocha",
+    "build": "yarn run build-win &&  yarn run build-mac &&  yarn run build-linux",
+    "build-win": "electron-packager . --platform=win32 --out=build --icon=./app/icons/icon.ico --asar --overwrite",
+    "build-mac": "electron-packager .  --platform=darwin --out=build --icons=./app/icons/icon.icns --asar --overwrite",
+    "build-linux": "electron-packager .  --platform=linux --out=build --icons=./app/icons/icon.png --asar --overwrite"
+  },
+  "author": "weikai",
+  "license": "MIT",
+  "dependencies": {
+    "dexie": "^3.0.1",
+    "electron": "9.0.3",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.7.0",
+    "electron-packager": "^14.2.1",
+    "mocha": "^8.0.1",
+    "spectron": "^11.0.0"
+  }
+}

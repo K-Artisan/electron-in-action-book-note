@@ -1,0 +1,15 @@
+{
+  "name": "bookmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error:no test specified\" && exit 1"
+  },
+  "author": "weikai",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.3"
+  }
+}

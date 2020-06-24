@@ -1,0 +1,31 @@
+{
+  "name": "clipmaster-9000",
+  "version": "1.0.0",
+  "description": "A menubar application with a rich UI.",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error:no test specified\" && exit 1",
+    "sql-rebuild": "electron-rebuild -f -w sqlite3",
+    "postinstall": "electron-rebuild -f -w sqlite3",
+    "rb": "electron-rebuild",
+    "rb-s3": "npm install sqlit3 --target=9.0.3 --arch=x64 --target_platform=win32 --dist-url=https://atom.io/download/electron/ --module_name=node_sqlite3 --module_path=../lib/binding/electron-v3.0-win32-x6",
+    "rb-s33": " cnpm install sqlite3 --build-from-source --runtime=electron --target=9.0.3 --dist-url=https://atom.io/download/electron --module_name=node_sqlite3 --module_path=../lib/binding/electron-v3.0-win32-x6",
+    "rb-s4": " cnpm install sqlite3 --build-from-source --runtime=electron --target=9.0.2 --dist-url=https://atom.io/download/electron"
+  },
+  "author": "weikai",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "9.0.3",
+    "electron-rebuild": "^1.11.0",
+    "knex": "^0.21.1",
+    "menubar": "^9.0.1",
+    "nan": "^2.14.1",
+    "request": "^2.88.2",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^7.0.0",
+    "node-pre-gyp": "^0.15.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Clipmaster",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error:no test specified\" && exit 1"
+  },
+  "author": "weikai",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^9.0.3"
+  }
+}

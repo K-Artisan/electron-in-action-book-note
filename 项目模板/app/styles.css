@@ -1,0 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+*,*:before ,*:after{
+    box-sizing: inherit;
+}
+body, input{
+    font: menu; /*Chromium 特有，让css使用系统字体*/
+}
