@@ -9,7 +9,7 @@
   "author": "weikai",
   "license": "MIT",
   "dependencies": {
-    "electron": "^9.0.3",
+    "electron": "^11.5.0",
     "marked": "^1.1.0"
   }
 }
